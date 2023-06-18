@@ -1,3 +1,4 @@
+package Complexity;
 
 public class Example1 {
 	
@@ -14,16 +15,17 @@ public class Example1 {
 		
 		public static  void case2(int [] num)
 		{
-			// complexity depends upon the num of input....cost increase linearly and depend upon number of inputs
+			// complexity depends upon the number of input....cost increase linearly and depend upon number of inputs
 //			Run time complexity --> 0(n)
 			for(int i=0;i<num.length;i++)
 			{
-				System.out.println();
 				
 				System.out.println(num[i]);  // 0(n)
-				System.out.println(); 
+				
 			}
+			// Note down that 0(n) or 0(n+2) or 0(n+n)= 0(2n) are equal to 0(n) if the user input is very large....
 		}
+		
 		
 	public static void main(String[] args) {
 
