@@ -4,18 +4,20 @@ public class Com_nsquare {
 	
 	public static void n2(int [] numbers)
 	{
-//		for(int num : numbers)
-//		
-//		for(int num1 : numbers)
-//		
-//			System.out.println(num+" "+num1);
 		
+		// so the overall run time complexity is 0(n*n) --> 0(n^2)
+		for(int num : numbers)  // run time complexity is 0(n)
+		{
+		for(int num1 : numbers)   // run time complexity is 0(n)
+		
+			System.out.println(num+" "+num1);
+		}
 		
 	}
 	
 	public static void main(String args[])
 	{
-		int [] arr = {1,3,5,8,9,16,20};
+		int [] arr = {1,3,5,1,5,6};
 		n2(arr);
 	}
 
