@@ -5,10 +5,10 @@ public class SpaceComplexity {
 	
 	public static void main(String[] args) {
 		
-		
-		for(int i=0;i<args.length;i++)
+		String arr[] = {"farhad","rashid"};
+		for(int i=0;i<arr.length;i++)
 		{
-			System.out.println(args[i]);
+			System.out.println(arr[i]);
 			
 		}
 			
