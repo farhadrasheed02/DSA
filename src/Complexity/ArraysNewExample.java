@@ -11,8 +11,10 @@ public class ArraysNewExample {
 		num.add(5);
 		num.add(20);
 		num.add(30);
-		System.out.println(num.indexOf(20));
-		System.out.println(num.size());
+		num.set(3,7); // setting value at the index 3
+		System.out.println(num.indexOf(20)); // trying to get the index value of 20, it position in the list...
+		System.out.println(num.get(2));   // trying to get the element at the index position 2....
+		System.out.println(num.size());   // returns the size of the ArrayList...
 	}
 
 }
