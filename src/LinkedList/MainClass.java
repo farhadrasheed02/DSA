@@ -9,7 +9,10 @@ public class MainClass {
 		lst.addLast(10);
 		lst.addLast(20);
 		lst.addLast(30);
-		lst.print();
+		
+		System.out.println(lst.Contains(10));
+		System.out.println(lst.indexof(20));
+		//lst.print();
 	}
 
 }

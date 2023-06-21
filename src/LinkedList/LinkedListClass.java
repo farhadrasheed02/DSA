@@ -20,11 +20,36 @@ public class LinkedListClass {
 	public void addLast(int item)
 	{
 		var node = new Node(item);
-		if(first==null) // if no elemet 
+		if(Isempty()) // if no elemet  Isempty created method to replace the code  if(first==null)
 			first=last=node;
 		else
 			last.next=node;
 		last = node;
+	}
+	
+	public int indexof(int item)
+	{
+		int index =0; // we dont have index here so we declare
+		var current =first;
+		while(current !=null)
+			{
+			if(current.value==item)
+				return index;
+			current=current.next;
+		index++;	
+		
+			}
+		return -1;
+	}
+
+	public boolean Contains(int item)
+	{
+		return indexof(item) != -1;
+	}
+	
+	public void removeFirst()
+	{
+		// [10 -> 20 -> 30]
 	}
 	public void print() {
         current = first;
@@ -36,5 +61,9 @@ public class LinkedListClass {
         }
         System.out.println();
     }
+	private boolean Isempty()
+	{
+		return first==null;
+	}
 	
 }
