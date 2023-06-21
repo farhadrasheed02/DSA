@@ -8,11 +8,15 @@ public class LinkedListClass {
 		public Node(int value)
 		{
 			this.value=value;
+			this.next=null;
 		}
 	}
+	
 	private Node first;
 	private Node last;
+	private Node current;
 	
+	// method to add element at the end of the list...
 	public void addLast(int item)
 	{
 		var node = new Node(item);
@@ -23,7 +27,7 @@ public class LinkedListClass {
 		last = node;
 	}
 	public void print() {
-        Node current = first;
+        current = first;
         
         System.out.print("LinkedList: ");
         while (current != null) {
