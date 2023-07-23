@@ -22,7 +22,7 @@ public class LinkedListClass {
 	public void addLast(int item)
 	{
 		var node = new Node(item);
-		if(Isempty()) // if no elemet  Isempty created method to replace the code  if(first==null)
+		if(Isempty()) // if no element  Is empty created method to replace the code  if(first==null)
 			first=last=node;
 		else
 			last.next=node;
